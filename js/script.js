@@ -142,6 +142,7 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
   const btn = form.querySelector('.btn');
   const status = document.getElementById('form-status');
   const original = btn.textContent;
+  const formData = new FormData(form);
 
   btn.textContent = 'Sending...';
   btn.disabled = true;
@@ -150,8 +151,8 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
   try {
     const res = await fetch('/', {
       method: 'POST',
-      body: new FormData(form),
-      headers: { 'Accept': 'application/json' }
+      body: new URLSearchParams(formData).toString(),
+      headers: { 'Accept': 'application/x-www-form-urlencoded' }
     });
 
     if (res.ok) {
