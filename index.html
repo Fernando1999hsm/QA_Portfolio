@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QA Engineer | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">QA.E</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="hero-badge">QA Engineer</div>
+          <h1>Quality isn't found — <br><span class="gradient-text">it's engineered.</span></h1>
+          <p>I break things so users don't have to. 4+ years ensuring software quality through manual and automation testing, and continuous improvement.</p>
+          <div class="hero-actions">
+            <a href="CV.2026_03.pdf" class="btn btn-primary" download>Download Resume</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+            <a href="#contact" class="btn btn-accent">Contact Me</a>
+          </div>
+        </div>
+          <div class="hero-photo-block">
+          <div class="hero-photo">
+            <img src="img/Foto_01.jpeg" alt="QA Engineer" onerror="this.classList.add('error')">
+            <div class="photo-placeholder">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About</span>
+        <h2>Turning edge cases into <span class="gradient-text">peace of mind</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I started my career as a Manual QA Tester, focusing on e-commerce platforms and enterprise applications. Throughout my journey, I discovered a passion for automation and software quality engineering.</p>
+          <p>Today, I combine manual testing expertise with automation frameworks such as Selenium, Playwright, Robot Framework, and Python/AI based solutions to improve product quality and testing efficiency.</p>
+          <div class="about-details">
+            <div><strong>Location:</strong> Remote / LATAM</div>
+            <div><strong>Experience:</strong> 4+ years</div>
+            <div><strong>Focus:</strong> Web & Mobile</div>
+            <div><strong>Favorite Testing:</strong> Accessibility Testing</div>
+          </div>
+        </div>
+        <div class="about-code">
+          <div class="code-window">
+            <div class="code-header">
+              <span></span><span></span><span></span>
+              <span>test_coverage.js</span>
+            </div>
+            <div class="code-body">
+<pre><span class="kw">describe</span>(<span class="str">'User Authentication'</span>, <span class="kw">()</span> => {
+  <span class="kw">it</span>(<span class="str">'should handle invalid tokens'</span>, <span class="kw">async</span> () => {
+    <span class="kw">const</span> res = <span class="kw">await</span> request(app)
+      .get(<span class="str">'/api/profile'</span>)
+      .set(<span class="str">'Authorization'</span>, <span class="str">'Bearer invalid'</span>);
+
+    expect(res.status).<span class="fn">toBe</span>(401);
+    expect(res.body.error).<span class="fn">toBe</span>(<span class="str">'Invalid token'</span>);
+  });
+});</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Skills</span>
+        <h2>Technical <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">📋</span>
+            <h3>Testing</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Functional Testing</span>
+            <span>Regression Testing</span>
+            <span>Smoke Testing</span>
+            <span>UAT</span>
+            <span>API Testing</span>
+            <span>Exploratory Testing</span>
+          </div>
+        </div>
+        <div class="skill-card skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">🤖</span>
+            <h3>Automation</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Selenium</span>
+            <span>Playwright</span>
+            <span>Robot Framework</span>
+            <span>Cypress</span>
+            <span>WebDriverIO</span>
+          </div>
+        </div>
+        <div class="skill-card skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">🐍</span>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Python</span>
+            <span>Java</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+          </div>
+        </div>
+        <div class="skill-card skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">🛠️</span>
+            <h3>Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span>Azure DevOps</span>
+            <span>Jira</span>
+            <span>Git</span>
+            <span>Postman</span>
+          </div>
+        </div>
+        <div class="skill-card skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">☁️</span>
+            <h3>Cloud</h3>
+          </div>
+          <div class="skill-tags">
+            <span>AWS</span>
+            <span>GCP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Experience</span>
+        <h2>Where I've <span class="gradient-text">made an impact</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2024 — 2026</div>
+            <h3>Software Quality Tester Sr. Associate</h3>
+            <h4>NTT DATA - Coppel</h4>
+            <ul>
+              <li>Increased automated test coverage by 30%</li>
+              <li>Reduced regression execution time by 10 hours per sprint</li>
+              <li>Performed enterprise testing across Windows, Android, and iOS</li>
+              <li>Managed defect lifecycle using Azure DevOps</li>
+              <li>Conducted production deployment validations</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">2022 — 2024</div>
+            <h3>QA Manual Tester</h3>
+            <h4>Softtek - Justfab</h4>
+            <ul>
+              <li>Identified 50+ critical defects before production</li>
+              <li>Supported large e-commerce platform releases</li>
+              <li>Performed regression, integration, and usability testing</li>
+              <li>Worked in Agile/Scrum teams</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Projects</span>
+        <h2>Featured <span class="gradient-text">work</span></h2>
+      </div>
+      <div class="projects-grid">
+        <a class="project-card" href="https://www.linkedin.com/posts/fernando-torres-calva-qa_selenium-java-automationtesting-activity-7344577011899604992-n5Pb?utm_source=share&utm_medium=member_desktop&rcm=ACoAADW3r8wBpD5bo1kpt91NaECQp3YBwtI-t7o" target="_blank" rel="noopener">
+          <div class="project-header">
+            <span class="project-icon">🧪</span>
+          </div>
+          <h3>Automation with Selenium Java</h3>
+          <p>Developed a comprehensive automation framework using Selenium WebDriver and Java to streamline testing processes and improve test coverage.</p>
+          <div class="project-tags">
+            <span>Selenium</span><span>Java</span><span>Browser Management</span>
+          </div>
+        </a>
+        <a class="project-card" href="https://www.linkedin.com/posts/fernando-torres-calva-qa_proyecto-de-automatizaci%C3%B3n-end-to-end-activity-7405011868387262464--M06?utm_source=share&utm_medium=member_desktop&rcm=ACoAADW3r8wBpD5bo1kpt91NaECQp3YBwtI-t7o" target="_blank" rel="noopener">
+          <div class="project-header">
+            <span class="project-icon">⚙️</span>
+          </div>
+          <h3>Automation with Cypress</h3>
+          <p>Developed a robust automation framework using Cypress and javascript to enhance end-to-end testing capabilities and improve test reliability.</p>
+          <div class="project-tags">
+            <span>Cypress</span><span>JavaScript</span><span>End-to-End Testing</span>
+          </div>
+        </a>
+        <a class="project-card" href="https://www.linkedin.com/posts/fernando-torres-calva-qa_qa-testautomation-playwright-activity-7463760674599362561-5lUV?utm_source=share&utm_medium=member_desktop&rcm=ACoAADW3r8wBpD5bo1kpt91NaECQp3YBwtI-t7o" target="_blank" rel="noopener">
+          <div class="project-header">
+            <span class="project-icon">🔍</span>
+          </div>
+          <h3>Automation with Playwright AI</h3>
+          <p>Developed an innovative automation solution using Playwright and AI to improve test coverage and reduce maintenance overhead.</p>
+          <div class="project-tags">
+            <span>Playwright</span><span>AI</span><span>Python</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Certifications</span>
+        <h2>Professional <span class="gradient-text">Certifications</span></h2>
+      </div>
+      <div class="certs-carousel">
+        <div class="carousel-track-container">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <div class="cert-card cert-highlight">
+                <div class="cert-icon">⚙️</div>
+                <h3>Google IT Automation with Python Professional Certificate</h3>
+                <p class="cert-org">Google</p>
+                <span class="cert-badge cert-badge--featured">★ Destacado</span>
+              </div>
+              <div class="cert-card cert-highlight">
+                <div class="cert-icon">☁️</div>
+                <h3>AWS Cloud Quest: Cloud Practitioner – Training Badge</h3>
+                <p class="cert-org">AWS</p>
+                <span class="cert-badge cert-badge--featured">★ Destacado</span>
+              </div>
+              <div class="cert-card cert-highlight">
+                <div class="cert-icon">✅</div>
+                <h3>Tester Foundation Level 4.0</h3>
+                <p class="cert-org">Skillsoft</p>
+                <span class="cert-badge cert-badge--featured">★ Destacado</span>
+              </div>
+              <div class="cert-card cert-highlight">
+                <div class="cert-icon">🤖</div>
+                <h3>Google AI Essentials</h3>
+                <p class="cert-org">Google</p>
+                <span class="cert-badge cert-badge--featured">★ Destacado</span>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="cert-card cert-highlight">
+                <div class="cert-icon">🧠</div>
+                <h3>Generative AI in Software Testing</h3>
+                <p class="cert-org">GenAI</p>
+                <span class="cert-badge cert-badge--featured">★ Destacado</span>
+              </div>
+              <div class="cert-card">
+                <div class="cert-icon">📬</div>
+                <h3>Introduction to Postman and API Testing</h3>
+                <p class="cert-org">Postman</p>
+              </div>
+              <div class="cert-card">
+                <div class="cert-icon">🤖</div>
+                <h3>Robot Framework Test Automation Lvl 1</h3>
+                <p class="cert-org">Robot Framework</p>
+              </div>
+              <div class="cert-card">
+                <div class="cert-icon">🤖</div>
+                <h3>Robot Framework Test Automation Lvl 2</h3>
+                <p class="cert-org">Robot Framework</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="cert-card">
+                <div class="cert-icon">🌐</div>
+                <h3>WebDriverIO Javascript UI Automation</h3>
+                <p class="cert-org">WebDriverIO</p>
+              </div>
+              <div class="cert-card">
+                <div class="cert-icon">🧪</div>
+                <h3>Test Automation [Selenium – Cypress – Playwright]</h3>
+                <p class="cert-org">Test Automation</p>
+              </div>
+              <div class="cert-card">
+                <div class="cert-icon">🔒</div>
+                <h3>Introduction to Cybersecurity</h3>
+                <p class="cert-org">Cisco Network Academy</p>
+              </div>
+              <div class="cert-card">
+                <div class="cert-icon">🛡️</div>
+                <h3>Cyber Threat Management</h3>
+                <p class="cert-org">Cisco Network Academy</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <div class="cert-card">
+                <div class="cert-icon">🐍</div>
+                <h3>PyTest Automation Course</h3>
+                <p class="cert-org">PyTest</p>
+              </div>
+              <div class="cert-card">
+                <div class="cert-icon">🐧</div>
+                <h3>Linux Essentials</h3>
+                <p class="cert-org">Cisco Network Academy</p>
+              </div>
+              <div class="cert-card">
+                <div class="cert-icon">💻</div>
+                <h3>Python Essentials 1</h3>
+                <p class="cert-org">Cisco Network Academy</p>
+              </div>
+              <div class="cert-card">
+                <div class="cert-icon">💻</div>
+                <h3>Python Essentials 2</h3>
+                <p class="cert-org">Cisco Network Academy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-btn carousel-btn--left" aria-label="Previous">‹</button>
+        <button class="carousel-btn carousel-btn--right" aria-label="Next">›</button>
+        <div class="carousel-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="learning" class="learning">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Learning</span>
+        <h2>Continuous <span class="gradient-text">Learning</span></h2>
+      </div>
+      <div class="learning-grid">
+        <div class="learning-card">
+          <div class="learning-icon">🐍</div>
+          <h3>Advanced Python</h3>
+          <p>Deepening Python skills for test automation and scripting.</p>
+        </div>
+        <div class="learning-card">
+          <div class="learning-icon">🎭</div>
+          <h3>Playwright with Python</h3>
+          <p>Modern end-to-end testing with Playwright and Python.</p>
+        </div>
+        <div class="learning-card">
+          <div class="learning-icon">🤖</div>
+          <h3>AI-assisted Testing</h3>
+          <p>Leveraging AI for test generation, analysis, and maintenance.</p>
+        </div>
+        <div class="learning-card">
+          <div class="learning-icon">🔒</div>
+          <h3>Security Testing Fundamentals</h3>
+          <p>OWASP, penetration testing, and security automation.</p>
+        </div>
+        <div class="learning-card">
+          <div class="learning-icon">🔄</div>
+          <h3>CI/CD Automation</h3>
+          <p>Pipeline orchestration, continuous testing, and delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="accessibility" class="accessibility">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Accessibility Testing</span>
+        <h2>Quality for <span class="gradient-text">everyone</span></h2>
+      </div>
+      <div class="accessibility-content">
+        <div class="accessibility-card">
+          <div class="accessibility-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="6" r="1.5"/><path d="M12 10v8"/><path d="M8 14h8"/></svg>
+          </div>
+          <p class="accessibility-text">Being colorblind has strengthened my focus on accessibility and user experience validation. I actively consider accessibility scenarios to help create more inclusive digital products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2>Let's build something <span class="gradient-text">reliable</span></h2>
+      </div>
+      <div class="contact-content">
+        <p class="contact-text">Have a project, role, or just want to talk QA? Drop me a message.</p>
+        <form class="contact-form" id="contact-form" netlify>
+          <input type="hidden" name="form-name" value="contact">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" placeholder="Message" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+        <div class="form-status" id="form-status"></div>
+        <div class="contact-social">
+          <a href="https://www.linkedin.com/in/fernando-torres-calva-qa" class="social-link" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/Fernando1999hsm" class="social-link" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:fernandocalva15@gmail.com" class="social-link">Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> QA Engineer — Destruction is also a creative impulse</p>
+    </div>
+  </footer>
+
+  <img id="mouse-circle" src="svg/bug-svgrepo-com.svg" alt="">
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
